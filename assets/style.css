@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    /* Supprime les marges extérieures par défaut */
+    padding: 0;
+    /* Supprime les espacements intérieurs par défaut */
+    box-sizing: border-box;
+    /* Inclut les marges intérieures et bordures dans les dimensions */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Définit la police d'écriture */
+    background-color: #f5f0ed;
+    /* Définit la couleur de fond de la page */
+}
+
+/* Partie header */
+
+header {
+    width: 100%;
+    background-color: #18243a;
+    display: flex;
+    /* Active Flexbox pour organiser les éléments */
+    flex-direction: column;
+    /* Place les éléments les uns sous les autres */
+    align-items: center;
+    /* Centre les éléments horizontalement */
+    padding: 7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+    /* Ajoute un espace entre le logo et la navigation */
+    position: sticky;
+    /* Permet au header de rester visible pendant le défilement */
+    top: 0;
+    /* Colle le header en haut de l'écran */
+    left: 0;
+    /* Aligne le header sur le bord gauche */
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    /* Supprime le soulignement du lien */
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.logo span {
+    color: #c77d91;
+}
+
+.nav-header {
+    list-style-type: none;
+    /* Supprime les puces de la liste */
+    display: flex;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-header a {
+    color: white;
+    font-size: 0.7em;
+    width: 10%;
+}
+
+.nav-header a.actif {
+    color: #c77d91;
+    /* Affiche le lien actif en rose */
+}
+
+/* Partie footer */
+
+footer {
+    background-color: #18243a;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centre les éléments sur l'axe principal */
+    align-items: center;
+    /* Centre les éléments horizontalement */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.nav-footer {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-footer a {
+    color: white;
+    font-size: 0.75em;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* section introductive dans l'index */
+
+
+.section-introduction {
+    width: 100%;
+    padding: 20px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background: linear-gradient(to right, #18243a, #2a3c5e);
+    /* Crée un dégradé horizontal entre deux bleus */
+    color: white;
+    justify-items: left;
+}
+
+.section-introduction p:first-of-type {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* section présentation dans l'index */
+
+.sections-index {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 15%;
+}
+
+.sections-index p {
+    text-align: justify;
+    /* Aligne le texte à gauche et à droite */
+}
+
+
+h1 {
+    text-align: center;
+    /* Centre le titre */
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    margin-left: 0;
+    color: #2a3c5e;
+}
+
+p {
+    justify-content: justify;
+    font-size: 1.1em;
+}
+
+h2 {
+    color: #2a3c5e;
+    margin-bottom: 20px;
+}
+
+/* Partie constat index */
+
+.boite-constat {
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    border: solid 1px #e0e0e0;
+    /* Ajoute une bordure grise de 1 pixel */
+    border-radius: 10px;
+    /* Arrondit les coins */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.grille-constat {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grille-constat p {
+    text-align: left;
+}
+
+.pourcentage {
+    font-size: 2.5em;
+    color: #c77d91;
+    font-weight: bold;
+}
+
+/* Partie autres index */
+
+.section-index {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Partie section disparu index */
+
+h3 {
+    color: #c77d91;
+}
+
+.section-disparu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grille-disparu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boite-disparu {
+    width: 100%;
+    /* Prend toute la largeur disponible */
+    height: 40vh;
+    /* Définit une hauteur de 40 % de l'écran */
+    background-color: white;
+    border: solid 1px #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mentions-legales-parties {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mentions-legales-parties p {
+    text-align: justify;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 10%;
+}
+
+.mentions-legales-sources {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Partie elles ont marqué l'histoire*/
+
+.grille-femmes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.boite-femme {
+    background-color: white;
+    border: solid 1px #e0e0e0;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+
+}
+
+img {
+    width: 100%;
+    height: 45vh;
+    border-radius: 10px;
+    object-fit: cover;
+    /* Recadre l'image sans la déformer */
+}
+
+.src-img {
+    font-size: 0.5em;
+    padding: 5px;
+}
+
+.img-femme {
+    margin-bottom: 15px;
+}
+
+.bouton-biographie {
+    background-color: #c77d91;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px auto;
+    margin-top: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contacter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infos-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+    /* Met les étiquettes du form en gras */
+}
+
+input,
+textarea {
+    height: 5vh;
+    padding: 10px;
+    border-radius: 5px;
+    border: #c77d91 1px solid;
+    font-size: 1em;
+}
+
+textarea {
+    height: 10vh;
+}
+
+button {
+    padding: 10px;
+    background-color: #c77d91;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    border: #a65370 1px solid;
+    color: white;
+}
+
+/* Partie page biographie */
+
+.biographie {
+    padding: 20px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.en-bref {
+    background-color: white;
+    border: solid 1px #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.en-bref h3 {
+    font-size: 1.5em;
+    font-weight: 800;
+    /* Définit un poids de police très gras */
+}
+
+.dates {
+    color: #a65370;
+    font-weight: 700;
+}
+
+.image-page-biographie {
+    height: auto;
+    width: 100%;
+}
+
+.section-image-page-biographie {
+    width: 100%;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.bio p {
+    text-align: justify;
+}
+
+.presentation {
+    background-color: rgb(166, 83, 112, 0.2);
+    border: #a65370 1px solid;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.infos-texte {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.boites-realisations {
+    background-color: white;
+    border: solid 1px #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-around;
+    /* Répartit l'espace autour des éléments */
+}
+
+.grille-realisations {
+    display: flex;
+    flex-direction: column;
+}
+
+.boites-realisations p {
+    text-align: left;
+}
+
+.dates-cles {
+    background-color: white;
+    border: solid 1px #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.retour {
+    background-color: #c77d91;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+video {
+    display: block;
+    /* Affiche la vidéo comme un bloc */
+    width: 100%;
+    /* Prend toute la largeur disponible */
+    height: auto;
+    /* Adapte automatiquement la hauteur */
+    margin-bottom: 10px;
+}
+
+.source-video {
+    color: #18243a;
+}
+
+/* Ces règles s'appliquent à partir de 960 pixels de largeur */
+@media screen and (min-width:960px) {
+    .grille-constat {
+        display: grid;
+        /* Active CSS Grid */
+        grid-template-columns: repeat(2, 50%);
+        /* Crée deux colonnes de 50 % */
+        grid-template-rows: repeat(2, 50%);
+        /* Définit deux rangées de 50 % */
+        gap: 20px;
+        margin: 30px auto;
+        /* Ajoute une marge verticale et centre la grille */
+    }
+
+    .grille-disparu {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        gap: 20px;
+        margin: 30px auto;
+    }
+
+    .grille-femmes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 25px;
+        margin: 30px auto;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .boite-femme {
+        height: 100%;
+        box-sizing: border-box;
+        /* Inclut les bordures et espacements dans la taille */
+    }
+
+    img {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        /* Recadre les images sans les déformer */
+    }
+
+    .src-img {
+        font-size: 0.4em;
+    }
+
+    .biographie {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .grille-realisations {
+        flex-direction: row;
+    }
+
+    .boites-realisations {
+        width: 35%;
+    }
+}
+
+/* Ces règles s'appliquent à partir de 1200 pixels de largeur */
+@media screen and (min-width:1200px) {
+    .grille-constat {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .boite-constat {
+        height: 25vh;
+    }
+
+    .boite-disparu {
+        height: 30vh;
+    }
+
+    .sections-index {
+        padding-left: 20%;
+        padding-right: 20%;
+        margin-top: 8%;
+    }
+
+    header {
+        flex-direction: row;
+        /* Place le logo et la navigation côte à côte */
+        justify-content: space-between;
+        /* Éloigne le logo et la navigation */
+        padding: 20px;
+    }
+
+    .nav-header a {
+        font-size: 1em;
+        width: 30%;
+    }
+
+    .nav-header {
+        gap: 30px;
+    }
+
+    .content {
+        padding: 40px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 0;
+    }
+
+    .grille-femmes {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    /* Effet au survol des boutons de biographie */
+    .bouton-biographie:hover {
+        background-color: #a65370;
+        transform: scale(1.07);
+        /* Agrandit légèrement le bouton */
+    }
+
+    .biographie {
+        padding: 40px;
+        margin-left: 15%;
+        margin-right: 15%;
+        gap: 50px;
+    }
+
+    .section-image-page-biographie {
+        width: 100%;
+    }
+}
